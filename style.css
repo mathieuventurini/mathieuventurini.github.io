@@ -1,0 +1,187 @@
+
+
+body{
+
+    margin: 0;
+    
+}
+
+.background{
+
+    background-color:hsl(185, 75%, 39%);
+    height: 715px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.globalcard{
+
+    height: 373px;
+    width: 350px;
+    background-color: white;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-shadow: 0px 30px 150px rgba(0, 0, 0, 0.247);
+    position: absolute;
+    z-index: 99;
+}
+
+#bannerimg{
+
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    height: 140px;
+    width: 100%;
+}
+
+#profileimg{
+
+    border-radius: 50%;
+    border: 5px white solid;
+    transform: translateY(87px);
+    position: absolute;
+    width: 93px;
+}
+
+.informations{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.toppartinformations{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    line-height: 0.3em;
+}
+
+.name{
+
+    display: flex;
+}
+
+#name{
+
+    font-weight: 600;
+    font-size: 17px;
+
+
+}
+#age, .city{
+
+    font-weight: lighter;
+    color: rgb(94, 92, 92);
+}
+
+.city{
+    font-size: 0.85em;
+}
+
+.bottompartinformations{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(187, 187, 187, 0.932);
+    width: 100%;
+    
+}
+
+.bottompartinformations p{
+
+    line-height: 0.1em;
+}
+
+.followers, .likes, .photos{
+
+    padding: 10px;
+    line-height: 0.3em;
+    text-align: center;
+    padding-top: 21px;
+
+}
+
+.likes{
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.likenumber{
+
+    font-weight: 900;
+    font-size: 1.165em;
+}
+
+.socialinfo{
+
+    font-weight: lighter;
+    font-size: 0.65em;
+    color: rgb(112, 112, 112);
+ 
+}
+
+.topimg{
+
+    transform: translateY(-400px) translateX(-40px);
+ 
+} 
+
+.bottomimg{
+
+    transform: translateY(450px) translateX(20px);
+    
+}
+
+
+@media screen and (max-width: 500px){
+
+
+    .background{
+    
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 900px;
+        
+    }
+
+    .globalcard{
+
+        height: 373px;
+        width: 320px;
+       
+
+    }
+
+    .topimg{
+
+        transform: translateY(-500px) translateX(30px);
+
+     
+    } 
+    
+    .bottomimg{
+    
+        transform: translateY(415px) translateX(-40px);
+        
+    }
+
+
+
+}
+
+
