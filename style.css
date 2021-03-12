@@ -1,10 +1,16 @@
 
 /* PAGE */
 
+html{
+
+    height: 100%;
+}
+
 body{
 
     margin: 0;
     padding: 0;
+    height: 100%;
 
 }
 
@@ -18,7 +24,7 @@ body{
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 200; 
-    height: 767px;
+    height: 100%;
 
 }
 
