@@ -1,187 +1,253 @@
 
+/* PAGE */
 
 body{
 
     margin: 0;
-    
+    padding: 0;
+
 }
 
 .background{
 
-    background-color:hsl(185, 75%, 39%);
-    height: 715px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    
-}
-
-.globalcard{
-
-    height: 373px;
-    width: 350px;
-    background-color: white;
-    border-radius: 17px;
+    background: linear-gradient(180deg, rgb(179, 111, 235) 0%, rgb(108, 96, 219) 100%);
+    padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
-    box-shadow: 0px 30px 150px rgba(0, 0, 0, 0.247);
-    position: absolute;
-    z-index: 99;
-}
-
-#bannerimg{
-
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
-    height: 140px;
-    width: 100%;
-}
-
-#profileimg{
-
-    border-radius: 50%;
-    border: 5px white solid;
-    transform: translateY(87px);
-    position: absolute;
-    width: 93px;
-}
-
-.informations{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-}
-
-.toppartinformations{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    line-height: 0.3em;
-}
-
-.name{
-
-    display: flex;
-}
-
-#name{
-
-    font-weight: 600;
-    font-size: 17px;
-
+    font-weight: 200; 
 
 }
-#age, .city{
 
-    font-weight: lighter;
-    color: rgb(94, 92, 92);
-}
+/* BOX */
 
-.city{
-    font-size: 0.85em;
-}
-
-.bottompartinformations{
-
+.general{
+    background-color: white;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid rgba(187, 187, 187, 0.932);
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -628px 68%;
+    position: relative;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.418);
+    max-width: 920px;
     width: 100%;
+    height: 510px;
+
+}
+
+#mobileimg{
+
+    display: none;
+}
+
+/* IMAGE ON THE LEFT */
+
+
+.imgpart{
+
+    overflow: hidden;
+    transform: translateX(-44px);
+
+}
+
+.imgpart img{
+
+    width: 100%;
+    max-width: 400px;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    transform: translateX(-60px);
     
 }
 
-.bottompartinformations p{
+#orangebox{
 
-    line-height: 0.1em;
-}
-
-.followers, .likes, .photos{
-
-    padding: 10px;
-    line-height: 0.3em;
-    text-align: center;
-    padding-top: 21px;
-
-}
-
-.likes{
-
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.likenumber{
-
-    font-weight: 900;
-    font-size: 1.165em;
-}
-
-.socialinfo{
-
-    font-weight: lighter;
-    font-size: 0.65em;
-    color: rgb(112, 112, 112);
- 
-}
-
-.topimg{
-
-    transform: translateY(-400px) translateX(-40px);
- 
-} 
-
-.bottomimg{
-
-    transform: translateY(450px) translateX(20px);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-48.4%) translateY(-24%);
+    z-index: 99;
+    width: 19.5%;
     
 }
 
 
-@media screen and (max-width: 500px){
 
+/* FAQ PART */
+
+.faqpart{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 70px 50px 70px 0px;
+    height: 400px;
+    
+
+}
+
+.accordion_item{
+
+    border-bottom: 1px solid hsl(240, 3%, 85%);
+    margin: 8px;
+    
+}
+
+.faqpart h1{
+
+    color: hsla(238, 29%, 16%, 0.959);
+    font-size: 1.9em;
+}
+
+.accordion_collapse{
+
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+
+}
+
+
+.accordion_question h2{
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    color: hsla(238, 29%, 16%, 0.836);
+    font-weight: 500;   
+
+}
+
+.accordion_question{
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    padding-bottom: 8px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+ 
+}
+
+button:focus{
+
+    outline: none;
+}
+
+.accordion_question::after{
+
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+.accordion_content{
+
+    font-size: 12px;
+    color: hsla(238, 29%, 16%, 0.808);
+    line-height: 1.25em;
+    margin-bottom: 13px;
+    
+}
+
+h2:hover{
+
+    color: hsl(14, 88%, 65%);
+    
+}
+
+/* ANIMATION (accordion) */
+
+.accordion_question.open h2{
+
+    font-weight: 600;
+    color: rgba(43, 42, 42, 0.952);
+    
+}
+
+.accordion_question.open::after{
+
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1100px){
 
     .background{
+
+        
+        padding: 80px 0px 80px 0px;
+
     
-        height: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        max-height: 900px;
+    }
+
+    .general{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 330px;
+        background-image: none;
+        margin-top: 70px;
+    }
+
+    .faqpart{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    height: 400px;
+
+    }
+
+    .imgpart{
+
+        display: none;
+    }
+
+
+    #orangebox{
+
+        display: none;
+    }
+
+    #mobileimg{
+
+        display: block;
+        position: absolute;
+        transform: translateX(-54%) translateY(-267px);
+        left: 50%;
         
     }
 
-    .globalcard{
 
-        height: 373px;
-        width: 320px;
-       
-
-    }
-
-    .topimg{
-
-        transform: translateY(-500px) translateX(30px);
-
-     
-    } 
-    
-    .bottomimg{
-    
-        transform: translateY(415px) translateX(-40px);
-        
-    }
 
 
 
 }
-
-

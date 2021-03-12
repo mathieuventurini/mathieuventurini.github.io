@@ -2,63 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
   
-  <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
   <div class="background">
 
-    <div class="topimg"><img id="topimg" alt="topimage" src="images/bg-pattern-top.svg"></div>
-    
-    <div class="globalcard">
+        <div class="general">
 
-      <img id="profileimg" alt="profileimage" src="images/image-mv.png">
+          <img id="mobileimg" alt="Womanworking" src="images/illustration-woman-online-mobile.svg">
+          <img id="orangebox" src="images/illustration-box-desktop.svg" alt="box">
 
-        <div class="cardtop">
-          <img id="bannerimg" alt="bannerimage" src="images/bg-pattern-card.svg">
+          <div class="imgpart">
+            <img alt="Womanworking" src="images/illustration-woman-online-desktop.svg">
+          </div>
+
+
+          <div class="faqpart">
+                <h1>FAQ</h1>
+     
+              <div class="accordion_item">
+                    
+                    <button class="accordion_question"><h2>How many team members can I invite?</h2></button>
+                    
+                    <div class="accordion_collapse">
+                      <div class="accordion_content">
+                        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion_item">
+                    
+                    <button class="accordion_question"><h2>What is the maximum file upload size?</h2></button>
+                    
+                    <div class="accordion_collapse">
+                      <div class="accordion_content">
+                        No more than 2GB. All files in your account must fit your allotted storage space.
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion_item">
+                
+                    <button class="accordion_question"><h2>How do I reset my password?</h2></button>
+            
+                    <div class="accordion_collapse">
+                      <div class="accordion_content">
+                        Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion_item">
+                    
+                    <button class="accordion_question"><h2>Can I cancel my subscription?</h2></button>
+                    
+                    <div class="accordion_collapse">
+                      <div class="accordion_content">
+                        Yes! Send us a message and we’ll process your request no questions asked.
+                      </div>
+                    </div>
+              </div>
+                  
+              <div class="accordion_item">
+                    
+                    <button class="accordion_question"><h2>Do you provide additional support?</h2></button>
+                  
+                    <div class="accordion_collapse">
+                      <div class="accordion_content">
+                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                      </div>
+                    </div>
+              </div>
+
+            
+          </div>
         </div>
-
-        <div class="informations">
-
-            <div class="toppartinformations">
-
-                <div class="name">
-                  <p><span id="name">Mathieu Venturini</span> <span id="age">26</span></p>
-                </div>
-                <div class="city"><p>Paris</p></div>
-              
-            </div>
-
-            <div class="bottompartinformations">
-              <div class="followers">
-                <p class="likenumber">80K</p>
-                <p class="socialinfo">Followers</p>
-              </div>
-
-              <div class="likes">
-                <p class="likenumber">803K</p>
-                <p class="socialinfo">Likes</p>
-              </div>
-
-              <div class="photos">
-                <p class="likenumber">1.4K</p>
-                <p class="socialinfo">Photos</p>
-              </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="bottomimg"><img id="bottomimg" alt="bottomimage" src="images/bg-pattern-bottom.svg"></div>
   </div>
-  
+  <script src="app.js"></script>
 </body>
 </html>
