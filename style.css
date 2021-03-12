@@ -15,8 +15,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 200; 
+    height: 767px;
 
 }
 
