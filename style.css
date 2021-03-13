@@ -47,10 +47,6 @@ body{
 
 }
 
-#mobileimg{
-
-    display: none;
-}
 
 /* IMAGE ON THE LEFT */
 
@@ -85,6 +81,16 @@ body{
     
 }
 
+#mobileimg{
+
+    display: none;
+}
+
+#mobileimgshadow{
+
+    display: none;
+}
+
 
 
 /* FAQ PART */
@@ -96,6 +102,7 @@ body{
     max-width: 350px;
     padding: 70px 50px 70px 0px;
     height: 400px;
+    overflow: hidden;
     
 
 }
@@ -220,19 +227,21 @@ h2:hover{
         width: 330px;
         background-image: none;
         margin-top: 70px;
+        
     }
 
-    .faqpart{
+        .faqpart{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    padding: 20px;
-    height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 20px 20px;
+        height: 800px;
+        contain: none;
+    
+       
 
-    }
+        }
 
     .imgpart{
 
@@ -252,6 +261,13 @@ h2:hover{
         transform: translateX(-54%) translateY(-267px);
         left: 50%;
         
+    }
+
+    #mobileimgshadow{
+
+        display: block;
+        
+        transform: translateY(-15px;
     }
 
 
