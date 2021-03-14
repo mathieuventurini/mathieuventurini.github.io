@@ -1,0 +1,625 @@
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+
+button{
+
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button:focus{
+
+    outline: none;
+
+}
+
+#logo-mobile{
+
+    display: none;
+}
+
+.section1{
+
+    background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+    border-bottom-left-radius: 80px 80px;
+
+}
+
+.main-menu-mobile{
+
+    display: none;
+}
+
+.background-section1{
+
+    height: 450px;
+    overflow: hidden;
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: 210%;
+    background-position: -20rem -60rem;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    
+}
+
+.burger{
+
+    display: none;
+}
+
+
+.main-menu::before{
+
+    background: url(images/logo.svg);
+    content: '';
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 3px;
+    margin-right: 20px;
+
+}
+
+#logo{
+
+    position: absolute;
+    top: 25px;
+    left: 8%;
+
+}
+
+
+.top-menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 120px 0px 120px;
+
+
+}
+
+.main-menu{
+
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+
+.item{
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.login{
+
+    right: 0px;
+    position: absolute;
+}
+
+
+.bottom-menu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.slogan{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.001rem;
+    margin-bottom: 5px;
+}
+
+.slogan h2{
+    
+    font-size: 2.7em;
+}
+
+.slogan p{
+
+    color: hsla(0, 0%, 100%, 0.781);
+    font-size: 0.92em;
+}
+
+.btn-bottom-menu{
+
+    margin-top: 25px;
+}
+
+
+/* BTN Custom */
+
+.btn-menu{
+
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-menu:hover{
+
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
+
+.btn-menu::after{
+
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-image: url(images/icon-arrow-light.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    right: 0;
+    top: 44%;
+
+}
+
+
+.signup-start-btn{
+
+    border: none;
+    background: hsl(0, 0%, 100%);
+    padding: 10px 5px 10px 5px;
+    border-radius: 40px;
+    color: hsl(356, 100%, 66%);
+    font-weight: 600;  
+    transition: 0.1s ease-in-out;
+    width: 110px;
+ 
+}
+
+.signup-start-btn:hover{
+
+    background: hsl(355, 100%, 74%);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+
+.login-learn-btn{
+
+    border: none;
+    color: white;
+    background: transparent;
+    padding: 10px 5px 10px 5px;
+    border-radius: 40px;
+    width: 110px;
+    transition: 0.1s ease-in-out;
+}
+
+.learn{
+
+    border: 1px solid white;
+    font-weight: 600; 
+    transition: 0.1s ease-in-out;
+}
+
+.learn:hover{
+
+    background: white;
+    color: hsl(356, 100%, 66%);
+    transition: 0.1s ease-in-out;
+
+}
+
+.btnbottom{
+
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.loginbtn:hover{
+
+    background: hsl(355, 100%, 74%);
+    transition: 0.1s ease-in-out;
+
+}
+
+/* ANIMATION MENU */
+
+.item-menu{
+
+    position: relative;
+}
+
+.listitem-menu ul{
+
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    height: 110px;
+    width: 110px;
+    border-radius: 3%;
+    position: absolute;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.418);
+    display: none;
+
+}
+
+
+.listitem-menu ul li{
+
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.7em;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.listitem-menu ul li:hover{
+
+    font-weight: 900;
+}
+
+.btn-menu.open + .listitem-menu ul{
+
+    display: block;
+
+
+} 
+
+.btn-menu.open::after{
+
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+
+}
+
+.list2 li{
+
+    padding: 0.18rem;
+}
+
+.list3 li{
+
+    padding: 7px;
+}
+
+
+@media screen and (max-width : 800px){
+
+/* SECTION 1 (Head) */
+
+    .section1{
+
+        overflow: hidden;
+        background: linear-gradient(180deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+    }
+
+    .main-menu{
+
+        display: none;
+    }
+
+    #logo-mobile{
+
+        display: block;
+        width: 80px;
+        height: 30px;
+        position: absolute;
+        top: 8%;
+        left: 10%;
+
+    }
+
+    .background-section1{
+
+        height: 550px;
+        padding: 10px;
+        padding: 0;
+        align-items: center;
+        background-size: 350%;
+        background-position: -21rem -16rem;
+        justify-content: center;
+
+    }
+
+    .main-menu::before{
+
+        display: none;
+    
+    }
+
+    .bottom-menu{
+
+        margin-top: 60px;
+        width: 96%;
+        padding: 0;
+
+    }
+
+    .slogan{
+
+        text-align: center;
+        line-height: 3em;
+        margin-top: 0;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .slogan p{
+
+        font-size: 18px;
+        line-height: 1.5em;
+        width: 90%;
+    }
+
+    .btnbottom{
+
+        height: 45px;
+        width: 120px;
+        font-size: 15px;
+
+    }
+
+    .loginbtn:hover{
+
+        background: none;
+    
+    }
+
+    /* BURGER /////////// */
+
+    .burger{
+
+        height: 24px;
+        width: 42px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        right: 10px;
+        top: 44px;
+        position: absolute;
+
+    }
+
+    .burger span{
+
+        width: 30px;
+        height: 2px;
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s ease-in-out;
+    }
+
+    .burger span::before, .burger span::after{
+
+        content:'';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .burger span::before{
+
+        transform: translateY(-8px);
+
+    }
+
+    .burger span::after{
+
+        transform: translateY(8px);
+
+    }
+
+    .burger.active span{
+
+        background-color: transparent;
+    }
+
+    .burger.active span::before{
+
+        transform: translateY(0px) rotateZ(45deg);
+    }
+
+    .burger.active span::after{
+
+        transform: translateY(0px) rotateZ(-45deg);
+
+    }
+
+
+    /* ACCORDION MENU */
+
+
+        .contains{
+
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(135px);
+            border-radius: 2%;
+            height: 300Px;
+
+
+        }
+
+        .main-menu-mobile{
+
+            background-color: white;
+            display: none;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 2%;
+            padding: 10px;
+            box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.418);
+
+        }
+
+        .main-menu-mobile.active{
+
+            display: flex;
+
+        }
+
+        .item{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            
+    
+        }
+
+        .login{
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid rgba(170, 170, 170, 0.384);
+            margin-top: 20px;
+            margin-bottom: 12px;
+           
+        }
+
+        .login-start-btn{
+
+            height: 45px;
+            width: 130px;
+            font-size: 16px;
+            font-weight: 100;
+    
+        }
+    
+        .loginbtn{
+    
+            color: rgba(0, 0, 0, 0.76);
+        }
+
+        .signup-start-btn{
+
+            background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+            color: white;
+        }
+
+        .item-menu{
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* FAIRE LE AFTER APRES */
+        }
+
+
+        .accordion_title::after{
+
+            content: '';
+            height: 9px;
+            width: 9px;
+            background-image: url(images/icon-arrow-dark.svg);
+            background-position: center center;
+            transition: 0.2s ease-in-out;
+            position: absolute;
+            right: 95px;
+            background-size: cover;
+            
+        }
+
+        .accordion_title.active::after{
+
+            transform: rotate(180deg);
+            transition: 0.2s ease-in-out;
+            
+        }
+
+        .accordion_title.active{
+
+            color: hsl(207, 13%, 34%);
+        }
+
+
+        .accordion_title{
+
+            color: rgba(0, 0, 0, 0.849);
+            font-size: 16px;
+            font-weight: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: transparent;
+            color: rgba(0, 0, 0, 0.76);
+            font-weight: 200;
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 10px 20px 10px 20px;
+
+        }
+    
+
+        .list-mobile{
+
+            background-color: rgba(235, 235, 235, 0.856);
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            padding-inline-start: 0;
+            color: hsl(207, 13%, 34%);
+            font-size: 15px;
+            border-radius: 3%;
+            width: 280px;
+            padding: 10px;
+       
+        
+        }
+
+        .accordion_collapse{
+
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.2s ease-in-out;
+        }
+
+
+}

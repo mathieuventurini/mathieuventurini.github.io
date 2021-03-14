@@ -3,91 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   
-
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
-  <div class="background">
 
-        <div class="general">
+<!-- SECTION 1 -->
+<section class="section1">
+  <div class="background-section1">
+        
+    <div class="top-menu">
 
-          <img id="mobileimg" alt="Womanworking" src="images/illustration-woman-online-mobile.svg">
-          <img id="mobileimgshadow" alt="shadow" src="images/bg-pattern-mobile.svg">
-          <img id="orangebox" src="images/illustration-box-desktop.svg" alt="box">
-
-          <div class="imgpart">
-            <img alt="Womanworking" src="images/illustration-woman-online-desktop.svg">
-          </div>
-
-
-          <div class="faqpart">
-                <h1>FAQ</h1>
-     
-              <div class="accordion_item">
-                    
-                    <button class="accordion_question"><h2>How many team members can I invite?</h2></button>
-                    
-                    <div class="accordion_collapse">
-                      <div class="accordion_content">
-                        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-                      </div>
+                  <div class="burger">
+                    <span></span>
                   </div>
-              </div>
-              <div class="accordion_item">
-                    
-                    <button class="accordion_question"><h2>What is the maximum file upload size?</h2></button>
-                    
-                    <div class="accordion_collapse">
-                      <div class="accordion_content">
-                        No more than 2GB. All files in your account must fit your allotted storage space.
+                  <img id="logo-mobile" alt="logo" src="images/logo.svg">
+         
+          <div class="main-menu">
+                <div class="item">
+                      <div class="item-menu">
+                        <button class="btn-menu button1 accordion">Product</button>
+                          <div class="listitem-menu accordion_item">
+                            <ul class="list-menu list1 accordion_collapse">
+                                <li>Overview</li>
+                                <li>Pricing</li>
+                                <li>Marketplace</li>
+                                <li>Features</li>
+                                <li>Integrations</li>
+                            </ul>
+                          </div>
+                        </div>
+                      <div class="item-menu">
+                        <button class="btn-menu button2 accordion">Company</button>
+                          <div class="listitem-menu accordion_item">
+                            <ul class="list-menu list2 accordion_collapse">
+                                <li>About</li>
+                                <li>Team</li>
+                                <li>Blog</li>
+                                <li>Careers</li>
+                            </ul>
+                          </div>
                       </div>
-                    </div>
-              </div>
+                      <div class="item-menu">
+                        <button class="btn-menu button3 accordion">Connect</button>
+                          <div class="listitem-menu accordion_item">
+                            <!-- <div class="accordion_content"> -->
+                              <ul class="list-menu list3 accordion_collapse">
+                                  <li>Contact</li>
+                                  <li>Newsletter</li>
+                                  <li>LinkedIn</li>
+                              </ul>
+                            <!-- </div> -->
+                          </div>
+                      </div>
+                </div>
+                      <div class="login">
+                        <button class="login-learn-btn loginbtn login-start-btn">Login</button>
+                        <button class="signup-start-btn login-start-btn">Sign Up</button>
+                      </div>
+            </div>
 
-              <div class="accordion_item">
-                
-                    <button class="accordion_question"><h2>How do I reset my password?</h2></button>
-            
-                    <div class="accordion_collapse">
-                      <div class="accordion_content">
-                        Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
-                      </div>
-                    </div>
-              </div>
+            <!-- MOBILE MENU -->
 
-              <div class="accordion_item">
-                    
-                    <button class="accordion_question"><h2>Can I cancel my subscription?</h2></button>
-                    
-                    <div class="accordion_collapse">
-                      <div class="accordion_content">
-                        Yes! Send us a message and we’ll process your request no questions asked.
+            <div class="contains">
+            <div class="main-menu-mobile">
+              <div class="item">
+                    <div class="item-menu">
+                      <button class="accordion_title titlebtn1">Product</button>
+                        <div class="accordion_collapse ac1">
+                          <ul class="list1 list-mobile accordion_content">
+                              <li>Overview</li>
+                              <li>Pricing</li>
+                              <li>Marketplace</li>
+                              <li>Features</li>
+                              <li>Integrations</li>
+                          </ul>
+                        </div>
                       </div>
+                    <div class="item-menu">
+                      <button class="accordion_title titlebtn2">Company</button>
+                        <div class="accordion_collapse ac2">
+                          <ul class="list2 list-mobile accordion_content">
+                              <li>About</li>
+                              <li>Team</li>
+                              <li>Blog</li>
+                              <li>Careers</li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="item-menu">
+                      <button class="accordion_title titlebtn3">Connect</button>
+                        <div class="accordion_collapse ac3">
+                          <!-- <div class="accordion_content"> -->
+                            <ul class="list3 list-mobile accordion_content">
+                                <li>Contact</li>
+                                <li>Newsletter</li>
+                                <li>LinkedIn</li>
+                            </ul>
+                          <!-- </div> -->
+                        </div>
                     </div>
               </div>
-                  
-              <div class="accordion_item">
-                    
-                    <button class="accordion_question"><h2>Do you provide additional support?</h2></button>
-                  
-                    <div class="accordion_collapse">
-                      <div class="accordion_content">
-                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                      </div>
+                    <div class="login">
+                      <button class="login-learn-btn loginbtn login-start-btn">Login</button>
+                      <button class="signup-start-btn login-start-btn">Sign Up</button>
                     </div>
-              </div>
-
-            
           </div>
         </div>
+
+
+    </div>
+        
+    <div class="bottom-menu">
+                <div class="slogan">
+                  <h2>A modern publishing platform</h2>
+                  <p>Grow your audience and build your online brand</p>
+                </div>
+                <div class="btn-bottom-menu">
+                  <button class="signup-start-btn btnbottom">Start for Free</button>
+                  <button class="login-learn-btn learn btnbottom">Learn More</button>
+                </div>
+    </div>
+
+ 
+
   </div>
+</section>
+
+  <!-- SECTION 2 -->
+<!-- 
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn -->
+
+
   <script src="app.js"></script>
 </body>
 </html>
