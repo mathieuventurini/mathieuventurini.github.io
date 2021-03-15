@@ -136,6 +136,7 @@ button:focus{
 
     font-size: 0.9em;
     margin-left: 3px;
+    padding: 10px;
 }
 
 .error-msg{
