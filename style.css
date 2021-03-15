@@ -88,10 +88,10 @@ button:focus{
     margin: 0px;
     padding: 0px;
     position: absolute;
-    left: 30px;
+    /* left: 30px;
     width: 22px;
-    height: 22px;
-    cursor: pointer;
+    height: 22px; */
+    opacity: 0;
 
 }
 
@@ -173,6 +173,7 @@ button:focus{
     padding: 15px;
     border: 2px solid white;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .explication-msg-active{
@@ -181,13 +182,18 @@ button:focus{
 
 }
 
+.guesses-checked{
+
+    background-color: rgb(211, 182, 21);
+}
+
 
 @media screen and (max-width: 500px){
 
     .guesses{
 
-        width: 250px;
-        height: 40px;
+        height: 20px;
+        width: 220px;
     }
 
 
