@@ -1,189 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | [Blogr]</title>
-</head>
-<body>
+<html lang="fr">
 
-<!-- SECTION 1 -->
-<section class="section1">
-  <div class="background-section1">
-        
-    <div class="top-menu">
+    <head>
 
-                  <div class="burger">
-                    <span></span>
-                  </div>
-                  <img id="logo-mobile" alt="logo" src="images/logo.svg">
+            <title>Quiz</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
          
-          <div class="main-menu">
-                <div class="item">
-                      <div class="item-menu">
-                        <button class="btn-menu button1 accordion">Product</button>
-                          <div class="listitem-menu accordion_item">
-                            <ul class="list-menu list1 accordion_collapse">
-                                <li>Overview</li>
-                                <li>Pricing</li>
-                                <li>Marketplace</li>
-                                <li>Features</li>
-                                <li>Integrations</li>
-                            </ul>
-                          </div>
-                        </div>
-                      <div class="item-menu">
-                        <button class="btn-menu button2 accordion">Company</button>
-                          <div class="listitem-menu accordion_item">
-                            <ul class="list-menu list2 accordion_collapse">
-                                <li>About</li>
-                                <li>Team</li>
-                                <li>Blog</li>
-                                <li>Careers</li>
-                            </ul>
-                          </div>
-                      </div>
-                      <div class="item-menu">
-                        <button class="btn-menu button3 accordion">Connect</button>
-                          <div class="listitem-menu accordion_item">
-                            <!-- <div class="accordion_content"> -->
-                              <ul class="list-menu list3 accordion_collapse">
-                                  <li>Contact</li>
-                                  <li>Newsletter</li>
-                                  <li>LinkedIn</li>
-                              </ul>
-                            <!-- </div> -->
-                          </div>
-                      </div>
+   </head>
+
+  <body>
+   <div class="quiz-all">
+            <div class="question-part">
+                <h1 class="question">Que fait le chat ?</h1>
+            </div>
+            <div class="answer-part">
+
+                <form id="mainform" name="form" onsubmit="return checked()">
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer1" name="answer1" >
+                        <label class="replies" for="answer1">Il aboie</label>
+                    </div>
+                    <div class="guesses correct">
+                        <input type="checkbox" class="answer-check" id="answer2" name="answer2">
+                        <label class="replies" for="answer2">Il miaule</label>
+                    </div>
+                    <div class="guesses correct">
+                        <input type="checkbox" class="answer-check" id="answer3" name="answer3">
+                        <label class="replies" for="answer3">Il ronronne</label>
+                    </div>
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer4" name="answer4">
+                        <label class="replies" for="answer4">Il vole</label>
+                    </div>
+                    <div class="quiz-btn">
+                    <div class="submit"><input class="submit-restart-btn" type="submit" value="Répondre"/></div>
+                    <button class="submit-restart-btn" id="reload">Recommencer</button>
                 </div>
-                      <div class="login">
-                        <button class="login-learn-btn loginbtn login-start-btn">Login</button>
-                        <button class="signup-start-btn login-start-btn">Sign Up</button>
-                      </div>
+                </form>
+                <!-- <button class="submit-restart-btn" id="reload">Recommencer</button> -->
+                <div class="error-msg"><p>Veuillez cocher au moins une case.</p></div>
+                <div class="explication-msg"><p>Le chat peut miauler et ronronner. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nulla facilis, totam odio explicabo provident iste tenetur id ab impedit, nam neque! Et modi sapiente autem nulla optio qui minus!</p></div>
             </div>
 
-            <!-- MOBILE MENU -->
-
-            <div class="contains">
-            <div class="main-menu-mobile">
-              <div class="item">
-                    <div class="item-menu">
-                      <button class="accordion_title titlebtn1">Product</button>
-                        <div class="accordion_collapse ac1">
-                          <ul class="list1 list-mobile accordion_content">
-                              <li>Overview</li>
-                              <li>Pricing</li>
-                              <li>Marketplace</li>
-                              <li>Features</li>
-                              <li>Integrations</li>
-                          </ul>
-                        </div>
-                      </div>
-                    <div class="item-menu">
-                      <button class="accordion_title titlebtn2">Company</button>
-                        <div class="accordion_collapse ac2">
-                          <ul class="list2 list-mobile accordion_content">
-                              <li>About</li>
-                              <li>Team</li>
-                              <li>Blog</li>
-                              <li>Careers</li>
-                          </ul>
-                        </div>
-                    </div>
-                    <div class="item-menu">
-                      <button class="accordion_title titlebtn3">Connect</button>
-                        <div class="accordion_collapse ac3">
-                          <!-- <div class="accordion_content"> -->
-                            <ul class="list3 list-mobile accordion_content">
-                                <li>Contact</li>
-                                <li>Newsletter</li>
-                                <li>LinkedIn</li>
-                            </ul>
-                          <!-- </div> -->
-                        </div>
-                    </div>
-              </div>
-                    <div class="login">
-                      <button class="login-learn-btn loginbtn login-start-btn">Login</button>
-                      <button class="signup-start-btn login-start-btn">Sign Up</button>
-                    </div>
-          </div>
-        </div>
+            
+            
 
 
     </div>
-        
-    <div class="bottom-menu">
-                <div class="slogan">
-                  <h2>A modern publishing platform</h2>
-                  <p>Grow your audience and build your online brand</p>
-                </div>
-                <div class="btn-bottom-menu">
-                  <button class="signup-start-btn btnbottom">Start for Free</button>
-                  <button class="login-learn-btn learn btnbottom">Learn More</button>
-                </div>
-    </div>
 
- 
+    <script src="app.js"></script>
+  </body>
 
-  </div>
-</section>
-
-  <!-- SECTION 2 -->
-<!-- 
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn -->
-
-
-  <script src="app.js"></script>
-</body>
 </html>
