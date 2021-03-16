@@ -15,6 +15,8 @@ myForm.addEventListener("submit", (e) => {
     e.preventDefault();
 });
 
+
+// AFFICHER EN JAUNE AU CLIC 
 for (let i = 0; i < allAnswers.length; i++) {
     allAnswers[i].addEventListener('click', e => {
         guessesChecked.forEach(guessesChecked => {
@@ -25,8 +27,9 @@ for (let i = 0; i < allAnswers.length; i++) {
     })
 }
 
-    
 
+
+    
 
 
     function checked(){
@@ -44,7 +47,17 @@ for (let i = 0; i < allAnswers.length; i++) {
             }
             
         }
-    
+
+        for (let e = 0; e < correctAnswer.length; e++) {
+            if(correctAnswer[e].classList.contains('guesses-checked')){
+                console.log(correctAnswer);
+            }
+            else{
+                correctAnswer[e].classList.add('wrong-answer');
+            }
+            
+        };
+
         if (valid){
     
             correctAnswer.forEach(correctAnswer => {
