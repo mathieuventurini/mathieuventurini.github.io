@@ -10,13 +10,12 @@ let allAnswers = document.querySelectorAll('.answer-check');
 let guessesChecked = document.querySelectorAll('.guesses');
 
 
-
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
 });
 
+// BECOMES YELLOW ON CLICK 
 
-// AFFICHER EN JAUNE AU CLIC 
 for (let i = 0; i < allAnswers.length; i++) {
     allAnswers[i].addEventListener('click', e => {
         guessesChecked.forEach(guessesChecked => {
@@ -27,11 +26,7 @@ for (let i = 0; i < allAnswers.length; i++) {
     })
 }
 
-
-
-    
-
-
+// FUNCTION ON SUBMIT 
     function checked(){
 
         let valid = false;
@@ -40,13 +35,12 @@ for (let i = 0; i < allAnswers.length; i++) {
                 valid = true;
                 break;
             }
-        }
+        };
         for (let index = 0; index < wrongAnswer.length; index++) {
             if(wrongAnswer[index].classList.contains('guesses-checked')){
                 wrongAnswer[index].classList.add('wrong-answer')
             }
-            
-        }
+        };
 
         for (let e = 0; e < correctAnswer.length; e++) {
             if(correctAnswer[e].classList.contains('guesses-checked')){
@@ -55,7 +49,6 @@ for (let i = 0; i < allAnswers.length; i++) {
             else if(valid){
                 correctAnswer[e].classList.add('wrong-answer');
             }
-            
         };
 
         if (valid){
@@ -72,45 +65,9 @@ for (let i = 0; i < allAnswers.length; i++) {
         else {
             errorMsg.classList.add('error-msg-active');
     
-        }
+        };
     };
     
 reloadPage.addEventListener('click', (e)=> {
     document.location.reload();
-})
-
-
-
-    // function checked(){
-
-    //     let valid = false;
-    //     for (let i = 0; i < allAnswers.length; i++) {
-    //         if(allAnswers[i].checked){
-    //             valid = true;
-    //             break;
-    //         }
-    //     }
-    
-    //     if (valid){
-    
-    //         correctAnswer.forEach(correctAnswer => {
-    //             correctAnswer.classList.add('correct-answer');
-    //         });
-    //         // wrongAnswer.forEach(wrongAnswer => {
-    //         //     wrongAnswer.classList.add('wrong-answer');
-    //         // });
-    //         errorMsg.classList.remove('error-msg-active');
-    //         explicationMsg.classList.add('explication-msg-active');
-    //         guessesChecked.forEach(guessesChecked => {
-    //             guessesChecked.classList.remove('guesses-checked')
-    //         })
-    //     }
-    //     else {
-    //         errorMsg.classList.add('error-msg-active');
-    
-    //     }
-    // };
-    
-    //     reloadPage.addEventListener('click', (e)=> {
-    //         document.location.reload();
-    //     })
+});

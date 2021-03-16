@@ -6,7 +6,6 @@ body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
 
-
 }
 
 .quiz-all{
@@ -88,9 +87,6 @@ button:focus{
     margin: 0px;
     padding: 0px;
     position: absolute;
-    /* left: 30px;
-    width: 22px;
-    height: 22px; */
     opacity: 0;
 
 }
@@ -145,7 +141,7 @@ button:focus{
 
 }
 
-/* ON CLICK */
+/* CLASSES ON CLICK */
 
 .correct-answer{
 
