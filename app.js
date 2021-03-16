@@ -52,7 +52,7 @@ for (let i = 0; i < allAnswers.length; i++) {
             if(correctAnswer[e].classList.contains('guesses-checked')){
                 console.log(correctAnswer);
             }
-            else{
+            else if(valid){
                 correctAnswer[e].classList.add('wrong-answer');
             }
             
