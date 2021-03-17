@@ -214,6 +214,11 @@ button:focus{
     display: block;
 }
 
+.guesses-disabled{
+    
+    pointer-events: none;
+
+}
 
 /* RESPONSIVE */
 

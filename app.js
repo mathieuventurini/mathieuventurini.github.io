@@ -18,7 +18,7 @@ myForm.addEventListener("submit", (e) => {
     e.preventDefault();
 });
 
-// BECOMES YELLOW ON CLICK 
+// BORDER YELLOW ON CLICK 
 
 for (let i = 0; i < allAnswers.length; i++) {
     allAnswers[i].addEventListener('click', e => {
@@ -59,21 +59,22 @@ for (let i = 0; i < allAnswers.length; i++) {
                 correctAnswer[e].style.fontWeight = '700';
                 
             }
-
         };
 
         if(valid){
     
             errorMsg.classList.remove('error-msg-active');
             explicationMsg.classList.add('explication-msg-active');
-            submitBtn.style.display = 'none'
-            reloadPage.style.display = 'block'
-        
+            submitBtn.style.display = 'none';
+            reloadPage.style.display = 'block';
+            guessesChecked.forEach(guessesChecked => {
+                guessesChecked.classList.add('guesses-disabled')
+            })
+
         }
 
         else {
             errorMsg.classList.add('error-msg-active');
-    
         }
 
 
