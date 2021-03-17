@@ -10,6 +10,8 @@
             <link rel="preconnect" href="https://fonts.gstatic.com"> 
             <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/1b5014132b.js" crossorigin="anonymous"></script>
 
    </head>
 
@@ -21,18 +23,18 @@
             </div>
 
             <div class="answer-part">
-
+                
                 <form id="mainform" name="form" onsubmit="return checked()">
                     <div class="guesses wrong">
                         <input type="checkbox" class="answer-check" id="answer1" name="answer1" >
                         <label class="replies" for="answer1">Il aboie</label>
                     </div>
                     <div class="guesses correct">
-                        <input type="checkbox" class="answer-check" id="answer2" name="answer2">
+                        <input type="checkbox" class="answer-check answer-check-correct" id="answer2" name="answer2">
                         <label class="replies" for="answer2">Il miaule</label>
                     </div>
                     <div class="guesses correct">
-                        <input type="checkbox" class="answer-check" id="answer3" name="answer3">
+                        <input type="checkbox" class="answer-check answer-check-correct" id="answer3" name="answer3">
                         <label class="replies" for="answer3">Il ronronne</label>
                     </div>
                     <div class="guesses wrong">
@@ -40,8 +42,8 @@
                         <label class="replies" for="answer4">Il vole</label>
                     </div>
                     <div class="quiz-btn">
-                    <div class="submit"><input class="submit-restart-btn" type="submit" value="Répondre"/></div>
-                    <button class="submit-restart-btn" id="reload">Recommencer</button>
+                    <div class="submit"><input class="submit-btn" type="submit" value="Répondre"/></div>
+                    <button class="restart-btn" id="reload"><i class="fas fa-redo"></i></button>
                 </div>
                 </form>
    
