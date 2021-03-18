@@ -43,19 +43,17 @@ for (let i = 0; i < allAnswers.length; i++) {
         };
         for (let index = 0; index < wrongAnswer.length; index++) {
             if(wrongAnswer[index].classList.contains('guesses-checked')){
-                wrongAnswer[index].classList.add('wrong-answer')
-                wrongAnswer[index].classList.remove('guesses-checked')
+
             }
         };
 
         for (let e = 0; e < correctAnswer.length; e++) {
             if(correctAnswer[e].classList.contains('guesses-checked')){
-                correctAnswer[e].classList.add('correct-answer-checked')
+                correctAnswer[e].classList.add('correct-answer')
                 
             }
             else if(valid){
                 correctAnswer[e].classList.add('correct-answer');
-                correctAnswer[e].style.color = 'red';
                 correctAnswer[e].style.fontWeight = '700';
                 
             }

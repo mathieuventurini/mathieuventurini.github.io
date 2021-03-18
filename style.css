@@ -51,8 +51,8 @@ button:focus{
 
 .guesses{
 
-    background-color: rgb(230, 227, 227);
-    border: none;
+    background-color: rgb(250, 250, 250);
+    border: 5px solid black;
     color: black;
     height: 50px;
     width: 400px;
@@ -165,21 +165,11 @@ button:focus{
 
 .correct-answer{
 
-    border: 5px solid green;
-
-}
-
-.correct-answer-checked{
-
     background-color: green;
     color: white;
+
 }
 
-
-.wrong-answer{
-
-    border: 4px solid red;
-}
 
 .error-msg-active{
 
@@ -205,8 +195,9 @@ button:focus{
 
 .guesses-checked{
 
-    border: rgb(201, 171, 4) solid 4px;
+    border: rgb(248, 211, 0) solid 5px;
     font-weight: 700;
+    
 }
 
 .exclamation-active{
