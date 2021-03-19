@@ -205,7 +205,7 @@ button:focus{
     display: block;
 }
 
-.guesses-disabled{
+.event-disabled{
     
     pointer-events: none;
 

@@ -39,10 +39,12 @@ for (let i = 0; i < allAnswers.length; i++) {
         };
         for (let index = 0; index < wrongAnswer.length; index++) {
             if(wrongAnswer[index].classList.contains('guesses-checked')){
-
+                wrongAnswer[index].style.fontWeight = 'normal'
+         
             }
             else if (valid){
-                wrongAnswer[index].style.border = '5px solid rgb(250, 250, 250)'
+                wrongAnswer[index].style.border = '5px solid rgb(250, 250, 250)';
+                
             }
         };
 
@@ -66,7 +68,7 @@ for (let i = 0; i < allAnswers.length; i++) {
             submitBtn.style.display = 'none';
             reloadPage.style.display = 'block';
             guessesChecked.forEach(guessesChecked => {
-                guessesChecked.classList.add('guesses-disabled')
+                guessesChecked.classList.add('event-disabled')
             })
 
         }
