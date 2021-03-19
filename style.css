@@ -11,7 +11,7 @@ body{
 .quiz-all{
 
     display: flex;
-    padding:  20px 50px 100px 50px;
+    padding:  0px 50px 100px 50px;
     flex-direction: column;
     color: white;
     align-items: center;
@@ -195,7 +195,7 @@ button:focus{
 
 .guesses-checked{
 
-    border: 5px solid rgb(252, 113, 0)  ;
+    border: 5px solid rgb(46, 46, 241);
     font-weight: 700;
     
 }
