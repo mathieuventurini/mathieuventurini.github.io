@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+            <title>Quiz</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/1b5014132b.js" crossorigin="anonymous"></script>
+
+   </head>
+
+  <body>
+   <div class="quiz-all">
+
+            <div class="question-part">
+                <h1 class="question">Qu'est-ce qu'une étoile filante TEST ?</h1>
+            </div>
+
+            <div class="answer-part">
+                
+                <form id="mainform" name="form" onsubmit="return checked()">
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer1" name="answer1" >
+                        <label class="replies" for="answer1">Une boule de feu qui traverse l'espace</label>
+                    </div>
+                    <div class="guesses correct">
+                        <input type="checkbox" class="answer-check" id="answer2" name="answer2">
+                        <label class="replies" for="answer2">Un grain de poussière cosmique qui se consume dans l'atmosphère</label>
+                    </div>
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer3" name="answer3">
+                        <label class="replies" for="answer3">Une étoile à la fin de sa vie</label>
+                    </div>
+                    <div class="guesses correct">
+                        <input type="checkbox" class="answer-check" id="answer4" name="answer4">
+                        <label class="replies" for="answer4">Un petit météore issu du nuage de poussière d'une comète</label>
+                    </div>
+                    <div class="quiz-btn">
+                    <div class="submit"><input class="submit-btn" type="submit" value="Répondre"/></div>
+                    <button class="restart-btn" id="reload"><i class="fas fa-redo"></i></button>
+                </div>
+                </form>
+   
+                <div class="error-msg"><p>Veuillez selectionner au moins une réponse.</p></div>
+                <div class="explication-msg"><p>Une étoile filante est une particule, grosse comme un grain de poussière ou au plus un gravier, venant de l’espace et qui se consume lors de son trajet dans l’atmosphère terrestre.</br> Avant d’entrer en contact avec l’atmosphère terrestre, ces petits cailloux, alors nommés météroïdes, suivaient leur trajectoire dans l’espace. Il y a des millions de tels météoroïdes dans notre système solaire.</p></div>
+
+            </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>

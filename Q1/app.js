@@ -56,7 +56,7 @@ for (let i = 0; i < allAnswers.length; i++) {
             else if(valid){
                 correctAnswer[e].classList.add('correct-answer');
                 correctAnswer[e].style.fontWeight = '700';
-                correctAnswer[e].style.border = '5px solid green'
+                correctAnswer[e].style.border = '6px solid green'
                 
             }
         };
