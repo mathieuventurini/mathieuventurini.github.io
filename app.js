@@ -8,10 +8,6 @@ let explicationMsg = document.querySelector('.explication-msg');
 let reloadPage = document.getElementById('reload');
 let allAnswers = document.querySelectorAll('.answer-check');
 let guessesChecked = document.querySelectorAll('.guesses');
-let exclamation = document.querySelectorAll('.exclamation');
-let exclamationOne = document.querySelector('.exclamation1');
-let exclamationTwo = document.querySelector('.exclamation2');
-let correctAnswerChecked = document.querySelector('.answer-check-correct')
 
 
 myForm.addEventListener("submit", (e) => {
@@ -45,6 +41,9 @@ for (let i = 0; i < allAnswers.length; i++) {
             if(wrongAnswer[index].classList.contains('guesses-checked')){
 
             }
+            else{
+                wrongAnswer[index].style.border = '5px solid rgb(250, 250, 250)'
+            }
         };
 
         for (let e = 0; e < correctAnswer.length; e++) {
@@ -55,6 +54,7 @@ for (let i = 0; i < allAnswers.length; i++) {
             else if(valid){
                 correctAnswer[e].classList.add('correct-answer');
                 correctAnswer[e].style.fontWeight = '700';
+                correctAnswer[e].style.border = '5px solid green'
                 
             }
         };

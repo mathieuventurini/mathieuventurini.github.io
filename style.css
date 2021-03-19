@@ -54,7 +54,7 @@ button:focus{
     background-color: rgb(250, 250, 250);
     border: 5px solid black;
     color: black;
-    height: 50px;
+    height: 40px;
     width: 400px;
     margin: 10px;
     padding: 18px;
@@ -195,7 +195,7 @@ button:focus{
 
 .guesses-checked{
 
-    border: rgb(248, 211, 0) solid 5px;
+    border: 5px solid rgb(9, 32, 241)  ;
     font-weight: 700;
     
 }
@@ -217,8 +217,13 @@ button:focus{
 
     .guesses{
 
-        height: 20px;
-        width: 220px;
+        height: 30px;
+        width: 250px;
+        padding: 20px;
+        line-height: 1.2em;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 50px;
     }
 
 
