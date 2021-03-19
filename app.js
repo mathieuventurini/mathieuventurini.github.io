@@ -41,7 +41,7 @@ for (let i = 0; i < allAnswers.length; i++) {
             if(wrongAnswer[index].classList.contains('guesses-checked')){
 
             }
-            else{
+            else if (valid){
                 wrongAnswer[index].style.border = '5px solid rgb(250, 250, 250)'
             }
         };
