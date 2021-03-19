@@ -181,7 +181,7 @@ button:focus{
 .explication-msg{
 
     display: none;
-    padding: 15px;
+    padding: 8px 10px 10px 10px;
     width: 300px;
     text-align: justify;
     line-height: 1.3em;
@@ -198,11 +198,6 @@ button:focus{
     border: 5px solid rgb(46, 46, 241);
     font-weight: 700;
     
-}
-
-.exclamation-active{
-
-    display: block;
 }
 
 .event-disabled{
