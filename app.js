@@ -5,7 +5,6 @@ let myForm = document.getElementById('mainform');
 let correctAnswer = document.querySelectorAll('.correct')
 let wrongAnswer = document.querySelectorAll('.wrong')
 let explicationMsg = document.querySelector('.explication-msg');
-let reloadPage = document.getElementById('reload');
 let allAnswers = document.querySelectorAll('.answer-check');
 let guessesChecked = document.querySelectorAll('.guesses');
 
@@ -66,9 +65,10 @@ for (let i = 0; i < allAnswers.length; i++) {
             errorMsg.classList.remove('error-msg-active');
             explicationMsg.classList.add('explication-msg-active');
             submitBtn.style.display = 'none';
-            reloadPage.style.display = 'block';
+            // reloadPage.style.display = 'block';
             guessesChecked.forEach(guessesChecked => {
-                guessesChecked.classList.add('event-disabled')
+                guessesChecked.classList.add('event-disabled');
+                
             })
 
         }
@@ -80,6 +80,11 @@ for (let i = 0; i < allAnswers.length; i++) {
 
     };
     
-reloadPage.addEventListener('click', (e)=> {
-    document.location.reload();
-});
+
+
+// let reloadPage = document.getElementById('reload');
+
+// reloadPage.addEventListener('click', (e)=> {
+//     document.location.reload();
+// });
+
