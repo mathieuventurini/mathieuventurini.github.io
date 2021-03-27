@@ -31,7 +31,8 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Architects Daughter', cursive;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1em;
     text-align: center;
 }
 
