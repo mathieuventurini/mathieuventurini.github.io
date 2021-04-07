@@ -155,6 +155,7 @@ button:focus{
 .error-msg{
 
     display: none;
+    text-align: center;
 
 }
 

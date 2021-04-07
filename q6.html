@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+            <title>Quiz</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/1b5014132b.js" crossorigin="anonymous"></script>
+
+   </head>
+
+  <body>
+   <div class="quiz-all">
+
+            <div class="question-part">
+                <h1 class="question">Cherchons ensemble qui peut-elle être…</h1>
+            </div>
+
+            <div class="answer-part">
+                
+                <form id="mainform" name="form" onsubmit="return checked()">
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer1" name="answer1" >
+                        <label class="replies" for="answer1">Une cuisinière ?</label>
+                    </div>
+                    <div class="guesses wrong">
+                        <input type="checkbox" class="answer-check" id="answer2" name="answer2">
+                        <label class="replies" for="answer2">Une femme de chambre ?</label>
+                    </div>
+                    <div class="guesses correct">
+                        <input type="checkbox" class="answer-check" id="answer3" name="answer3">
+                        <label class="replies" for="answer3">Une dame d'honneur ?</label>
+                    </div>
+                    <div class="quiz-btn">
+                    <div class="submit"><input class="submit-btn" type="submit" value="Répondre"/></div>
+                    <!-- <button class="restart-btn" id="reload"><i class="fas fa-redo"></i></button> -->
+                </div>
+                </form>
+   
+                <div class="error-msg"><p>Veuillez selectionner au moins une réponse.</p></div>
+                <div class="explication-msg"><p>Regarde les beaux vêtements et les précieux bijoux de cette dame. Elle était sûrement une personne proche de la reine! Certainement, une dame d’honneur… </br>C’est un rôle très important à la cour! La dame d’honneur est constamment à côté de la reine pour s’occuper d’elle et gérer sa maison.</p></div>
+
+            </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>
