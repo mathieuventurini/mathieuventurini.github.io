@@ -210,6 +210,12 @@ button:focus{
 
 }
 
+
+.audio-answer{
+
+    display: none;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 800px){
@@ -225,6 +231,7 @@ button:focus{
         line-height: 1em;
 
     }
+
 
 
 

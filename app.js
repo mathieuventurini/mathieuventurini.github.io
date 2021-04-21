@@ -7,6 +7,7 @@ let wrongAnswer = document.querySelectorAll('.wrong')
 let explicationMsg = document.querySelector('.explication-msg');
 let allAnswers = document.querySelectorAll('.answer-check');
 let guessesChecked = document.querySelectorAll('.guesses');
+let audioAnswer = document.getElementById('audio-response');
 
 
 myForm.addEventListener("submit", (e) => {
@@ -64,6 +65,7 @@ for (let i = 0; i < allAnswers.length; i++) {
     
             errorMsg.classList.remove('error-msg-active');
             explicationMsg.classList.add('explication-msg-active');
+            audioAnswer.play();
             submitBtn.style.display = 'none';
             // reloadPage.style.display = 'block';
             guessesChecked.forEach(guessesChecked => {
@@ -83,8 +85,4 @@ for (let i = 0; i < allAnswers.length; i++) {
 
 
 // let reloadPage = document.getElementById('reload');
-
-// reloadPage.addEventListener('click', (e)=> {
-//     document.location.reload();
-// });
 
