@@ -216,6 +216,12 @@ button:focus{
     display: none;
 }
 
+#audio-question{
+
+    display: none;
+}
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 800px){
