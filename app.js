@@ -8,14 +8,12 @@ let explicationMsg = document.querySelector('.explication-msg');
 let allAnswers = document.querySelectorAll('.answer-check');
 let guessesChecked = document.querySelectorAll('.guesses');
 let audioAnswer = document.getElementById('audio-response');
-let audioQuestion = document.getElementById('audio-question');
 
 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
 });
 
-window.onload = audioQuestion.play()
 
 // BORDER YELLOW ON CLICK 
 
@@ -67,7 +65,7 @@ for (let i = 0; i < allAnswers.length; i++) {
         if(valid){
     
             errorMsg.classList.remove('error-msg-active');
-            explicationMsg.classList.add('explication-msg-active');
+            // explicationMsg.classList.add('explication-msg-active');
             audioAnswer.play();
             submitBtn.style.display = 'none';
             // reloadPage.style.display = 'block';
